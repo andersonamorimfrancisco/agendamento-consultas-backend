@@ -1,0 +1,22 @@
+{
+  "name": "agendamento-consultas-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node build",
+    "test": "nodemon --exec node build -e ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/useranderson/agendamento-consultas-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/useranderson/agendamento-consultas-backend/issues"
+  },
+  "homepage": "https://github.com/useranderson/agendamento-consultas-backend#readme",
+  "dependencies": {}
+}
