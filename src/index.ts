@@ -1,10 +1,13 @@
 import express from "express";
 import middlewares from "./middlewares";
 import routes from "./routes";
+import { app as log } from "./utils/log";
 
 const app = express();
 
 middlewares(app);
 routes(app);
 
-app.listen(3000);
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => log(`listen port ${PORT}`));
