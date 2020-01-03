@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node build",
-    "test": "nodemon --exec npm start -e ts"
+    "tsc": "tsc",
+    "start": "node build",
+    "test": "echo \"No test specified\" && exit 0",
+    "postinstall": "npm run tsc"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,7 @@
     "@types/cors": "^2.8.6",
     "@types/express": "^4.17.2",
     "@types/mongoose": "^5.5.35",
-    "@types/node": "^13.1.0"
+    "@types/node": "^13.1.0",
+    "typescript": "^3.7.4"
   }
 }
