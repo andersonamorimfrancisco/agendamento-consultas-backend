@@ -22,7 +22,7 @@ export default () => {
       .catch(() => res.json({ error: true }));
   });
 
-  router.post("removepatient", (req, res) => {
+  router.post("/removepatient", (req, res) => {
     log("removepatient");
     appointmentController
       .removePatient(req.body)
